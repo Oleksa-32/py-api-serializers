@@ -35,10 +35,10 @@ class MovieListSerializer(MovieSerializer):
         slug_field="full_name"
     )
 
-    genres = (SlugRelatedField
-              (many=True,
-               read_only=True,
-               slug_field="name")
+    genres = (SlugRelatedField(
+        many=True,
+        read_only=True,
+        slug_field="name")
     )
 
 
